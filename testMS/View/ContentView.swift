@@ -11,7 +11,7 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State var citiesT: [String] = UserDefaults.standard.object(forKey: "cities") as! [String]
+    @State var citiesT: [String] = UserDefaults.standard.object(forKey: "cities") as? [String] ?? []
     @State private var newCity = ""
     @State var isEditing = false
     @State var adding = false
@@ -120,6 +120,7 @@ struct ContentView: View {
                         UserDefaults.standard.set(citiesT, forKey: "cities")
                         newCity = ""
                         adding.toggle()
+                        isEditing.toggle()
                     } else {
                         newCity = ""
                         wrongCity.toggle()

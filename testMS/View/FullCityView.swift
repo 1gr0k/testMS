@@ -35,6 +35,7 @@ struct FullCityView: View {
                 ForEach((viewModel.weather.list)!, id: \.id) { hour in
                     if viewModel.extractHour(date: hour.date!)=="16" {
                         DailyWeatherView(day: viewModel.extractDay(date: hour.date!),
+                                         icon: viewModel.getWeatherIcon(desc: hour.weather?.first?.description ?? "error"),
                                          temp: hour.main!.temp!)
                     }
                 }

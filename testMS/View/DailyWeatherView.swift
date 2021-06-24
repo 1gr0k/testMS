@@ -9,14 +9,18 @@ import SwiftUI
 
 struct DailyWeatherView: View {
     
-    @State var day: String
-    @State var temp: Double
+    let day: String
+    let icon: String
+    let temp: Double
     
     var body: some View {
         HStack{
             Text(day)
             Spacer()
+            HStack{
+            Text("\(icon)")
             Text("\(Int(temp))ºC")
+            }
         }
     }
 }
