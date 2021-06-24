@@ -33,6 +33,7 @@
 		1A9F1032267FEC9500F86CCE /* FullCityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullCityView.swift; sourceTree = "<group>"; };
 		1A9F10342683BE9A00F86CCE /* WeatherScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherScrollView.swift; sourceTree = "<group>"; };
 		1A9F10382684684100F86CCE /* DailyWeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyWeatherView.swift; sourceTree = "<group>"; };
+		1A9F104D2685248800F86CCE /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +50,7 @@
 		1A9F1009267FD7D400F86CCE = {
 			isa = PBXGroup;
 			children = (
+				1A9F104D2685248800F86CCE /* README.md */,
 				1A9F1014267FD7D400F86CCE /* testMS */,
 				1A9F1013267FD7D400F86CCE /* Products */,
 			);
